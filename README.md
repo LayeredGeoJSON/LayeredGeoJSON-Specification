@@ -56,7 +56,7 @@ The scope of this extension includes all GeoJSON geometries: Point, LineString, 
 ## Definitions
 JavaScript Object Notation (JSON), and the terms “object”, “name”, “value”, “array”, and “number”, are defined in [IETF RTC 4627](https://tools.ietf.org/html/rfc4627).
 
-# AeroGEOJson objets
+# LayeredGeoJSON objets
 An additional complex __"layer"__ property is added to all standard GeoJSON geometry types (Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon and GeometryCollection).
 
 ## Vertical layer object
