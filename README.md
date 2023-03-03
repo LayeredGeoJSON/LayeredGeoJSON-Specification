@@ -66,7 +66,6 @@ The __layer__ object has the following properties, in this order:
   * ___AGL___ = _Above ground level (or above water surface, as applicable)_
   * ___AMSL___ = _Above Mean Sea Level_
   * ___WGS84___ = _Above the surface of the WGS-84 ellipsoid (Ellipsoidal height)_
-  * ___STD___ = _Above an abstract surface defined by the zero elevation of the Standard Atmosphere_
 - __lower__ = _The value of the lower limit of the airspace layer expressed in metres (m) or feet (ft), in relation with the vertical datum specified in the  __lowerReference__ property. The __lower__ value is a double. A positive value is interpreted as meaning "above" the reference surface._
 - __lowerReference__ = _A code indicating a vertical reference system. The same values as for __upperReferemnce__ may be used_
 - __uom__ = _The unit of measurement in which the __upper__ and __lower__ values are expressed. Allowable values:_
