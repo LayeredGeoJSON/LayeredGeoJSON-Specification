@@ -1,18 +1,18 @@
-# Specification for AeroGeoJSON 
+# Specification for LayeredGeoJSON 
 
 __Authors__
 - Eduard POROSNICU, European Organisation for the Safety of Air Navigation (EUROCONTROL)
 
 __Abstract__
 
-AeroGEOJson is an extension to GeoJSON that provides a vertical layers object to all standard GeoJSON geometries.
+LayeredGEOJson is an extension to GeoJSON that provides a vertical layers object to all standard GeoJSON geometries.
 
 __Contents__
 - [Introduction](#introduction)
   * [Scope and purpose](#scope-and-purpose)
   * [Example](#example)
   * [Definitions](#definitions)
-- [AeroGEOJson objets](#AeroGEOJson-objets)
+- [LayeredGEOJson objets](#LayeredGEOJson-objets)
   * [Point with (vertical) layer](#Point-with-layer)
   * [LineString with (vertical) layer](#LineString-with-layer)
   * [Polygon with (vertical) layer](#Polygon-with-layer)
