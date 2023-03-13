@@ -14,7 +14,7 @@ __Contents__
   * [Definitions](#definitions)
 - [LayeredGEOJson objets](#LayeredGEOJson-objets)
   * [Point with (vertical) layer](#Point-with-layer)
-  * [Point with horizontal (circle) extent](#Point-with-radius-(Circle))
+  * [Point with horizontal (circle) extent](#Point-with-radius-Circle)
   * [LineString with (vertical) layer](#LineString-with-layer)
   * [Polygon with (vertical) layer](#Polygon-with-layer)
   * [MultiPoint with (vertical) layer](#MultiPoint-with-layer)
