@@ -14,6 +14,7 @@ __Contents__
   * [Definitions](#definitions)
 - [LayeredGEOJson objets](#LayeredGEOJson-objets)
   * [Point with (vertical) layer](#Point-with-layer)
+  * [Point with horizontal (circle) extent](#Point-with-radius-(Circle))
   * [LineString with (vertical) layer](#LineString-with-layer)
   * [Polygon with (vertical) layer](#Polygon-with-layer)
   * [MultiPoint with (vertical) layer](#MultiPoint-with-layer)
@@ -86,6 +87,29 @@ In a GeoJSON __geometry__ of type "Point", the __layer__ property appears immedi
         "upperReference": "AMSL",
         "lower": 50,
         "lowerReference": "AMSL"
+   }
+}
+...
+```
+
+##Point with radius (Circle)
+In a GeoJSON __geometry__ of type "Point", it is also possible to add an __extent__ property, as a sibling of the "coordinates" property and it must have two sub-properties:
+- "subType" with fixed value "Circle"
+- "radius" expressed in metres
+```JSON
+...
+{
+    "type": "Point",
+    "coordinates": [100.0, 0.0],
+     "layer": {
+        "upper": 150,
+        "upperReference": "AMSL",
+        "lower": 50,
+        "lowerReference": "AMSL"
+   },
+   "extent": {
+      "subType": "Circle",
+      "radius": 10000.0
    }
 }
 ...
