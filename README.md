@@ -92,7 +92,7 @@ In a GeoJSON __geometry__ of type "Point", the __layer__ property appears immedi
 ...
 ```
 
-##Point with radius (Circle)
+## Point with radius (Circle)
 In a GeoJSON __geometry__ of type "Point", it is also possible to add an __extent__ property, as a sibling of the "coordinates" property and it must have two sub-properties:
 - "subType" with fixed value "Circle"
 - "radius" expressed in metres
