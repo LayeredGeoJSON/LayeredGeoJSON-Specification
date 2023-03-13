@@ -5,7 +5,7 @@ __Authors__
 
 __Abstract__
 
-LayeredGEOJson is an extension to GeoJSON that provides a vertical layers object to all standard GeoJSON geometries.
+LayeredGEOJson is an extension to GeoJSON that provides a vertical layer extent to all standard GeoJSON geometries. In addition, it also provides the possibility to specify a horizontal "circle" extent for a Point geometry.
 
 __Contents__
 - [Introduction](#introduction)
@@ -25,10 +25,12 @@ __Contents__
         
 # Introduction
 ## Scope and purpose
-The purpose of this extension is to enable the use of GeoJSON for coding common airspace structures defined in the aeronautical data domain. In particular, it is intended to be used for the coding of Unmanned Airspace System (UAS) GeoZones. The GeoJSON standard [RFC 7946](https://tools.ietf.org/html/rfc7946) geometries (Point, LineString, Polygon, etc.) allow the coding of horizontal projections, but does not allow to specify a vertical extent of these geometrical features. While it is possible to declare the vertical extent as feature properties, this solution has two limitations:
+The purpose of this extension is to enable the use of GeoJSON for coding common airspace structures defined in the aeronautical data domain. In particular, it is intended to be used for the coding of Unmanned Airspace System (UAS) GeoZones.
+The GeoJSON standard [RFC 7946](https://tools.ietf.org/html/rfc7946) geometries (Point, LineString, Polygon, etc.) allow the coding of horizontal projections, but does not allow to specify a vertical extent of these geometrical features. While it is possible to declare the vertical extent as feature properties, this solution has two limitations:
 - it does not allow to specify a different vertical extent for each member of a GeometryCollection. This is needed for airspace structures that are composed of multiple volumes, for example in the form of an "inverted wedding cake"; this may be a common airspace structure for GeoZones;
-- it does not facilitate the rendering of such areas in a 3D view, as the naming and location of the vertical layer would be at the discretion of each user.
+- it does not facilitate the rendering of such areas in a 3D view, as the naming and location of the vertical layer would be at the discretion of each user community.
 The scope of this extension includes all GeoJSON geometries: Point, LineString, Polygon, MultiPoint, ... and GeometryCollection. However, the most common use is expected to include Polygon, MultiPolygon and GeometryCollection.
+In addition, for the Point geometries, this extension enables the provision of a radius value. This re-uses the [Microsoft Azure Maps GeoJSON extension](https://learn.microsoft.com/en-us/azure/azure-maps/extend-geojson) solution for Circle.
 ## Example
 ```JSON
 ...
