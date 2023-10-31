@@ -5,7 +5,7 @@ __Authors__
 
 __Abstract__
 
-LayeredGEOJson is an extension to GeoJSON that provides a vertical layer extent to all standard GeoJSON geometries. In addition, it also provides the possibility to specify a horizontal "circle" extent for a Point geometry.
+LayeredGeoJSON is an extension to GeoJSON that provides a vertical layer extent to all standard GeoJSON geometries. In addition, it also provides the possibility to specify a horizontal "circle" extent for a Point geometry.
 
 __Contents__
 - [Introduction](#introduction)
