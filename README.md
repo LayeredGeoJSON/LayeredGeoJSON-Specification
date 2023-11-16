@@ -64,12 +64,12 @@ An additional complex __"layer"__ property is added to all standard GeoJSON geom
 
 ## Vertical layer object
 The __layer__ object has the following properties, in this order:
-- __upper__ = _The value of the upper limit of the airspace layer expressed in metres (m) or feet (ft), in relation with the vertical datum specified in the  __upperReference__ property. The __upper__ value is a double. A positive value is interpreted as meaning "above" the reference surface._
+- __upper__ = _The value of the upper limit of the airspace layer expressed in metres (m) or feet (ft), in relation with the vertical datum specified in the  __upperReference__ property. The __upper__ value is a number. A positive value is interpreted as meaning "above" the reference surface._
 - __upperReference__ = _A code indicating a vertical reference system. Allowed values_
   * ___AGL___ = _Above ground level (or above water surface, as applicable)_
   * ___AMSL___ = _Above Mean Sea Level_
   * ___WGS84___ = _Above the surface of the WGS-84 ellipsoid (Ellipsoidal height)_
-- __lower__ = _The value of the lower limit of the airspace layer expressed in metres (m) or feet (ft), in relation with the vertical datum specified in the  __lowerReference__ property. The __lower__ value is a double. A positive value is interpreted as meaning "above" the reference surface._
+- __lower__ = _The value of the lower limit of the airspace layer expressed in metres (m) or feet (ft), in relation with the vertical datum specified in the  __lowerReference__ property. The __lower__ value is a number. A positive value is interpreted as meaning "above" the reference surface._
 - __lowerReference__ = _A code indicating a vertical reference system. The same values as for __upperReferemnce__ may be used_
 - __uom__ = _The unit of measurement in which the __upper__ and __lower__ values are expressed. Allowable values:_
   * ___m___ = _metres_
